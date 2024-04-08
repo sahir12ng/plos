@@ -46,6 +46,6 @@ app.use((err, req, res, next) => {
 });
 
 // Iniciar el servidor
-server.listen(port, '192.168.10.19' || 'localhost', () => {
+server.listen(port, '192.168.227.125' || 'localhost', () => {
   console.log(`App Node.js ${process.pid} ejecutando en ${server.address().address}:${server.address().port}`);
 });

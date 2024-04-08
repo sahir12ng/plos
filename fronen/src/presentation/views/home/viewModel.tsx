@@ -11,7 +11,7 @@ import { GetUserLocalUseCase } from '../../../domain/useCases/userLocal/GetUserL
       password: ''
     });
     const { user, getUserSession } = useUserLocal();
-  
+    console.log('Usuario: ' + JSON.stringify(user));
     useEffect(() => {
       // Se ejecuta cuando se instancia el viewModel
       getUserSession();

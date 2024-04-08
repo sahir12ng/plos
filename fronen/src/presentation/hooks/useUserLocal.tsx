@@ -3,10 +3,9 @@ import { GetUserLocalUseCase } from '../../domain/useCases/userLocal/GetUserLoca
 import { User } from '../../domain/entities/User';
 
 export const useUserLocal = () => {
-  const [user, setUser] = useState<User | undefined>();
+  const [user, setUser] = useState<User>();
 
   useEffect(() => {
-    // Permite efectos secundarios. obtiene el usuario de la sesión
     getUserSession();
   }, []);
 

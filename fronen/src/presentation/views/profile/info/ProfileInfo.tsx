@@ -6,7 +6,7 @@ import useViewModel from './ViewModel';
 
 interface Props extends StackScreenProps<RootStackParamList, 'ProfileInfoScreen'> { };
 
-export const ProfileInfoScreen = ({ navigation, route }: Props) => {
+const ProfileInfoScreen = ({ navigation, route }: Props) => {
   const { removeSession } = useViewModel();
 
   return (
@@ -21,3 +21,5 @@ export const ProfileInfoScreen = ({ navigation, route }: Props) => {
     </View>
   );
 };
+
+export default ProfileInfoScreen;
